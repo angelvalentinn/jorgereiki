@@ -1,0 +1,136 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Jorge Reiki | Inicio">
+    <section>
+        <h1>Jorge Fairchild - Reiki Master</h1>
+        <p>Despierta tu energía interior, libera la armonía y vive en equilibrio.</p>
+        <div class="buttons">
+            <a href="../reiki" aria-label="Click Aquí">Reiki</a>
+            <a href="../cursos-terapias" aria-label="Click Aquí">Terapias</a>
+        </div>
+    </section>
+</Layout>
+
+<style>
+    section {
+        text-align: center;
+        padding: 2rem 1rem;
+        background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,.3),
+        rgba(0,0,0,.3)
+        ), url('../../img1.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        min-height: 90vh;
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+
+        h1 {
+            font-family: 'Tangerine', cursive;
+            font-size: 3rem;
+        }
+
+        p {
+            text-wrap: pretty;
+            color: var(--clr-primary-txt);
+        }
+
+        .buttons {
+            margin-top: 0.5rem;
+            display: flex;
+            gap: 1rem;
+            
+            a {
+                border: 2px solid var(--clr-primary-200);
+                padding: .7rem 2rem;
+                font-weight: bold;
+                cursor: pointer;
+                transition: .2s ease-in all;
+                border-radius: 4px;
+            }
+
+            a:first-child {
+                border-color: #fff;
+
+                &:hover {
+                    background-color: var(--clr-primary-200);
+                    border-color: var(--clr-primary-200);
+                }
+            }
+
+            a:last-child {
+                border-color: var(--clr-primary-200);
+                background-color: var(--clr-primary-200);
+
+                &:hover {
+                    background-color: var(--clr-primary-300);
+                    border-color: var(--clr-primary-300);
+                }
+            }
+        }
+    }
+
+    @media screen and (width > 620px) {
+        section {
+            justify-content: center;
+
+            h1 {
+                font-size: 4rem;
+            }
+
+            p {
+                width: 60%;
+                font-size: 1.2rem;
+            }
+
+            .buttons {
+                margin-top: .5rem;
+                
+                a {
+                    padding: .4rem 2rem;
+                }
+
+            }
+    }
+    }
+
+    @media screen and (width > 900px) {
+        section {
+
+            justify-content: center;
+
+            h1 {
+                font-size: 6rem;
+            }
+
+            p {
+                width: 40%;
+                text-wrap: pretty;
+                font-size: 1.6rem;
+            }
+
+            .buttons {
+                margin-top: 20px;
+                display: flex;
+                gap: 1rem;
+                
+                a {
+                    padding: .8rem 3rem;
+                    font-size: 1.2rem;
+                }
+            }
+    }
+    }
+
+</style>
+
+
+

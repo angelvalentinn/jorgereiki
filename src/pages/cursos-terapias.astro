@@ -1,0 +1,85 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Card from "../components/Card.astro"
+import CARDS_DATA  from '../scripts/data.js'
+---
+
+<Layout title="Jorge Reiki | Cursos/Terapias">
+    <section>
+        <article class="text">
+            <h1>Cursos / Terapias</h1>
+            <p>
+                Estos son los cursos que me brindaron no solo la maestría, sino también experimentar transformaciones notables en mi vida, gracias a los conocimientos profundos sobre la energía y sus efectos curativos.
+                <strong>Todos los cursos / terapias pueden ser online y en persona.</strong>
+            </p>
+        </article>
+
+        <article class="cards">
+            {
+                CARDS_DATA.map(card => {
+                    return (
+                        <Card id={card.id} title={card.title} miniDescription={card.mini_description} description={card.description.paragraphs} characteristics={card.description.characteristics} img={card.img}/>
+                    )
+                })
+            }
+        </article>
+    </section>
+</Layout>
+
+<style>
+    section {
+        min-height: 100vh;
+        padding: 4rem 1rem;
+        color: var(--clr-black);
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;                      
+
+        .text {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1rem;
+                h1 {
+                    font-size: 2.5rem;
+                    text-decoration: underline var(--clr-primary-200);
+                }
+                strong {
+                    color:var(--clr-primary-200);
+                }
+                p {
+                    text-wrap: balance;
+                }
+        }
+
+        .cards {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            justify-content: center;
+        }
+    }
+
+    @media screen and (width > 620px) {
+        section {                
+            text-align: center;
+            .text {
+                    h1 {
+                        font-size: 3rem;
+                    }
+                    p {
+                        line-height: 1.5;
+                        font-size: 1.2rem;
+                        width: 60%;
+                    }
+            }
+
+        .cards {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            justify-content: center;
+        }
+    }
+    }
+</style>

@@ -1,0 +1,336 @@
+---
+---
+
+<header>
+    <section class="presentacion">
+        <img class="logo" src="../../logo.png" alt="Logo de la página" />
+        <p class="nombre">Jorge Fairchild</p>
+        <p>Sanación personal</p>
+    </section>
+
+    <section class="contacto">
+        <div>
+            <i class="bi bi-whatsapp"></i>
+            <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=GTvVlcSKjfvNQZNVBKwsDFQwvXTjgDMldKDMmMzScxVHBvTsRPjrJQvPJWCHphfqwKxJlCKRSpdnH">15-6507-5228</a>
+        </div>
+
+        <div>
+            <i class="bi bi-envelope"></i>
+            <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=GTvVlcSKjfvNQZNVBKwsDFQwvXTjgDMldKDMmMzScxVHBvTsRPjrJQvPJWCHphfqwKxJlCKRSpdnH">reikijorge@gmail.com</a>
+        </div>
+    </section>
+
+    <nav  class=`nav disabled`>
+        <ul>
+            <li><a href="/">Inicio</a></li>
+            <li><a href="/sobre-mi">Sobre mí</a></li>
+            <li><a href="/reiki">Reiki</a></li>
+            <li><a href="/cursos-terapias">Cursos / Terapias</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+        <i class="bi bi-x cerrar close-menu"></i>
+    </nav>  
+
+    <img  class="hamburguer" src="../../hamburguer.png" alt="Logo de menú hamburguesa">
+</header>
+
+<style>
+
+    .disabled {
+        display: none;
+    }
+
+    header {
+        display: grid;
+        grid-template-areas:
+        "presentacion hamburguer"
+        "contacto contacto";
+        color: var(--clr-primary-200);
+        align-items: center;
+
+        .presentacion {
+            justify-self: flex-start;
+            grid-area: presentacion;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+
+            .logo {
+                width: 100px;
+                height: 100px;
+            }
+
+            p {
+                font-size: 1.2rem;
+                display: none;
+            }
+
+            .nombre {
+                font-family: 'Tangerine', cursive;
+                font-size: 3.5rem;
+                color: var(--clr-primary-300);
+            }
+        }
+
+        .contacto {
+            grid-area: contacto;
+            padding: .2rem;
+            background-color: var(--clr-primary-200);
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: .5rem;
+
+            img {
+                width: 20px;
+                height: 20px;
+            }
+
+            i {
+                font-size: 1.4rem;
+            }
+
+            div {
+                display: flex;
+                align-items: center;
+                gap: 0.2rem;
+                cursor: pointer;
+                color: #fff;
+
+                a {
+                    
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+
+        nav {
+            padding: 0 1rem;
+            z-index: 10000;
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            width: 220px;
+            background-color: var(--clr-primary-300);
+            display: flex;
+            align-items: center;
+            justify-content: center;        
+
+            ul {
+                text-transform: uppercase;
+                letter-spacing: 1px;
+                display: flex;
+                flex-direction: column;
+                gap: 2rem;
+
+
+                li {
+                    font-size: 1.2rem;
+
+                    a {
+                        font-weight: 300;
+                    }
+
+                }
+            }
+
+            .cerrar {
+                color: #fff;
+                cursor: pointer;
+                position: absolute;
+                top: 20px;
+                right: 16px;
+                font-size: 2.5rem;
+            }
+        }
+
+        .hamburguer {
+            grid-area: hamburguer;
+            margin-right: 1rem;
+            justify-self: flex-end;
+            height: 30px;
+            width: 30px;
+            order: -1;
+            cursor: pointer;
+        }
+    }
+
+    @media  screen and (width > 620px) {
+
+        header {
+            padding-block: 0;
+            display: grid;
+            grid-template-areas:
+            "presentacion contacto"
+            "nav nav"
+            ;
+            align-items: center;
+            row-gap: 1rem;
+
+            .presentacion {
+                justify-self: center;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                .logo {
+                    width: 80px;
+                    height: 80px;
+                }
+
+                p {
+                    display: block;
+                    font-size: 1.1rem;
+                }
+
+                .nombre {
+                    font-family: 'Tangerine', cursive;
+                    font-size: 3rem;
+                    color: var(--clr-primary-300);
+                }
+                
+            }
+
+            .contacto {
+                justify-self: center;
+                margin-top: 0;
+                padding: 0;
+                background-color: inherit;
+                display: flex;
+                flex-direction: column;
+                align-items:flex-start;
+                gap: .5rem;
+
+                img {
+                    width: 20px;
+                    height: 20px;
+                }
+
+                div {
+                    display: flex;
+                    align-items: center;
+                    gap: 0.5rem;
+                    color: var(--clr-primary-200);
+                    a {
+                        color: var(--clr-primary-200);
+                    }
+                }
+            }
+
+            nav {
+                display: block !important;
+                grid-column: 1 / -1;
+                padding-top: 0;
+                position: static;
+                width: auto;
+                background-color: inherit;
+                display: block;
+                background-color: var(--clr-primary-200);
+                padding: 1rem 0;
+
+                ul {
+                    flex-direction: row;
+                    letter-spacing: 0;
+                    justify-content: center;
+                    gap: 3rem;
+                }
+
+                .cerrar {
+                    display: none;
+                }
+            }
+
+            .hamburguer {
+                display: none;
+            }
+        }
+    }
+
+    @media  screen and (width > 950px) {
+        header {
+            gap: 0;
+
+            .presentacion {
+                justify-self: center;
+                display: grid;
+                grid-template-areas:
+                "logo nombre"
+                "logo p";
+
+
+                .logo {
+                    justify-self: flex-end;
+                    grid-area: logo;
+                    width: 120px;
+                    height: 120px;
+                }
+
+                p {
+                    align-self: flex-start;
+                    font-size: 1.2rem;
+                }
+
+                .nombre {
+                    align-self: flex-end;
+                    font-size: 3rem;
+                }
+            }
+
+            .contacto {
+
+                img {
+                    width: 25px;
+                    height: 25px;
+                }
+
+                div {
+                    font-size: 1.2rem;
+                    color: var(--clr-primary-200);
+
+
+                }
+            }
+
+            nav {
+                grid-column: 1 / -1;
+                padding-top: 0;
+                position: static;
+                width: auto;
+                background-color: inherit;
+                display: block;
+                padding: .5rem 0;
+                background-color: var(--clr-primary-200);
+
+
+                ul {
+                    flex-direction: row;
+                    letter-spacing: 0;
+                    gap: 4rem;
+
+                    li {
+                        font-size: 1.1rem;
+                    }
+                }
+
+                .cerrar {
+                    display: none;
+                }
+            }
+
+            .hamburguer {
+                display: none;
+            }
+        }
+    }
+
+</style>
+
+
+
+
