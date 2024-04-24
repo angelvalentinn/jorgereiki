@@ -7,9 +7,9 @@ const { id, title, paragraphs, characteristics, img, certificates } = Astro.prop
         <h4>{title}</h4>
         <div class="paragraphs">
             {
-                paragraphs.map(p => {
+                paragraphs?.map(p => {
                     return (
-                        <p>
+                        <p class="p">
                             {p}
                         </p>
                     )
@@ -23,7 +23,7 @@ const { id, title, paragraphs, characteristics, img, certificates } = Astro.prop
             <h6>{characteristics[0]}</h6>
             <ul>
                 {
-                    characteristics.map((c,i) => {
+                    characteristics?.map((c,i) => {
                         if (i === 0) return null;
                         return (
                             <li><strong>{c[0]}</strong> {c[1]}</li>
@@ -91,13 +91,14 @@ const { id, title, paragraphs, characteristics, img, certificates } = Astro.prop
                 padding-inline: 1rem;
             }
 
-            p {
+            .p {
                 padding-inline: 1rem;
                 font-size: 0.9rem;
                 line-height: 1.5;
                 margin-bottom: 1rem;
                 letter-spacing: .5px;
                 font-weight: 100;
+                width: 100%                     ;
 
                 &:last-child {
                     margin: 0;

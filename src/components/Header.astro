@@ -6,14 +6,14 @@
     </section>
 
     <section class="contacto">
-        <div>
+        <div class="ask-to-whatsapp">
             <i class="bi bi-whatsapp"></i>
-            <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=GTvVlcSKjfvNQZNVBKwsDFQwvXTjgDMldKDMmMzScxVHBvTsRPjrJQvPJWCHphfqwKxJlCKRSpdnH">15-6507-5228</a>
+            <button>+54 9 11 6850 6625</button>
         </div>
 
         <div>
             <i class="bi bi-envelope"></i>
-            <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=GTvVlcSKjfvNQZNVBKwsDFQwvXTjgDMldKDMmMzScxVHBvTsRPjrJQvPJWCHphfqwKxJlCKRSpdnH">reikijorge@gmail.com</a>
+            <a target="_blank" href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=GTvVlcSKjfvNQZNVBKwsDFQwvXTjgDMldKDMmMzScxVHBvTsRPjrJQvPJWCHphfqwKxJlCKRSpdnH">jorgeguillermo1134@yahoo.com.ar</a>
         </div>
     </section>
 
@@ -97,8 +97,11 @@
                 cursor: pointer;
                 color: #fff;
 
-                a {
-                    
+                a, button {
+                    background-color: inherit;
+                    border: none;
+                    color: #fff;
+                    font-size: 1rem;
                     &:hover {
                         text-decoration: underline;
                     }
@@ -219,8 +222,12 @@
                     align-items: center;
                     gap: 0.5rem;
                     color: var(--clr-primary-300);
-                    a {
+                    a,button {
                         color: var(--clr-primary-300);
+                        background-color: inherit;
+                        border: none;
+                        cursor: pointer;
+                        font-size: 1.2rem;
                     }
                 }
             }
@@ -341,6 +348,10 @@
     }
 
 </style>
+
+<script>
+    import '../scripts/whatsapp.js'
+</script>
 
 
 
