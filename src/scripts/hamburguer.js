@@ -6,11 +6,12 @@
         const cerrar = document.querySelector('.close-menu');
     
         menu.addEventListener('click', () => {
-            nav.classList.remove('disabled');
+            nav.style.transform = 'translateX(0)';
         })
     
         cerrar.addEventListener('click', () => {
-            nav.classList.add('disabled');
+            nav.style.transform = 'translateX(100%)';
+
         })
     
 
