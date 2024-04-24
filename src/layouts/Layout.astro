@@ -3,7 +3,7 @@ import Header from '../components/Header.astro'
 import Footer from '../components/Footer.astro'
 import Modal from '../components/Modal.astro'
 import { ViewTransitions } from 'astro:transitions';
-const { title } = Astro.props;
+const { title, titleSeo, descriptionSeo, urlSeo, canonical } = Astro.props;
 ---
 
 <!doctype html>
@@ -12,8 +12,21 @@ const { title } = Astro.props;
 		<meta charset="UTF-8" />
 		<meta name="description" content="Astro description" />
 		<meta name="viewport" content="width=device-width" />
-		<link rel="shortcut icon" href="../../public/logo.png" type="image/x-icon">
-		<meta name="generator" content={Astro.generator} />
+		<link rel="shortcut icon" href="../../logo.png" type="image/x-icon">
+
+		<meta name="title" content={titleSeo}>
+		<meta name="description" content=c>
+		<meta name="keywords" content="Reiki, Reiki Argentina, Reiki Lomas de Zamora, Encontrar la paz">
+		<meta name="robots" content="index, follow">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta name="language" content="Spanish">
+		<meta property="og:url" content={urlSeo} />
+		<meta property="og:type" content="website" />
+		<meta property="og:title" content={titleSeo}/>
+		<meta property="og:description" content={descriptionSeo} />
+
+		<link rel="canonical" href={canonical}>
+
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@700&display=swap" rel="stylesheet">
@@ -21,9 +34,11 @@ const { title } = Astro.props;
 		<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
 		integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
 		crossorigin=""/>
+
 		<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
 		integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
 		crossorigin=""></script>
+
 		<ViewTransitions />
 		<title>{title}</title>
 	</head>
