@@ -3,10 +3,8 @@
 
 <footer id="contacto">
     <section class="contacto">
-        <article class="flex">
-            <h2 class="title">Contacto</h2>
-            <i class="bi bi-person-fill"></i>
-        </article>
+
+        <h2 class="title">Contacto</h2>
 
         <article>
             <a href="#" aria-label="Click Aquí"><i class="bi bi-instagram"></i>www.facebook.com/reikijorge</a>
@@ -17,10 +15,7 @@
     </section>
 
     <section class="dir">
-        <div class="direccion flex">
-            <h2 class="title">Direccion</h2>
-            <i class="bi bi-geo-fill"></i>
-        </div>
+        <h2 class="title">Direccion</h2>
 
         <p>Avenida colombre, Lomas de Zamora, Buenos Aires</p>
 
@@ -33,17 +28,13 @@
 <style>
 
     footer {
-        position: relative;
-        background-image: linear-gradient(
-        0deg,
-        #4c2d85ca,
-        rgba(0,0,0,.2)
-        ), url('../../img12.jpg');
+        text-align: left;
+        background-image: linear-gradient(0deg, #442879b7, #442879a3), url('../../footer.jpg');
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
-
         display: grid;
+        justify-items: center;
         gap: 3rem;
         padding-block: 2rem 2rem;
         padding-inline: 1rem;
@@ -64,7 +55,7 @@
         &::after {
             content: '';
             position: absolute;
-            top: -30px;
+            top: -32px;
             left: 50%;
             transform: translateX(-50%);
             clip-path: polygon(50% 100%, 0 60%, 100% 60%);
@@ -74,8 +65,7 @@
         }
 
         .title {
-            font-size: 2rem;
-            
+            font-size: 1.5rem;
         }
 
         section {
@@ -84,17 +74,11 @@
             align-items: center;
             gap: .5rem;
 
-            .direccion {
-                display: flex;
-                align-items: center;
-                gap: 0.5rem;
-            }
         }
 
         article {
             display: flex;
             flex-direction: column;
-            align-items:center;
             gap: 1rem;
 
             a {
@@ -109,14 +93,9 @@
             }
         }
 
-        .flex {
-            display: flex;
-            flex-direction: row;
-            gap: 1rem;
-            align-items: center;
-
-            i {
-                font-size: 2rem;
+        .dir {
+            p {
+                text-align: center;
             }
         }
 
@@ -124,11 +103,6 @@
             height: 180px;
             width: 100%;
             max-width: 300px;
-        }
-
-        i {
-            font-size: 1.2rem;
-
         }
 
     }
@@ -139,6 +113,16 @@
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 1rem;
+
+            .title {
+                font-size: 2rem;
+            }
+
+            .dir {
+                p {
+                    text-align: left;
+                }
+            }
 
             section {
                 align-items: flex-start;
@@ -152,34 +136,20 @@
                 }
 
                 p {
-                    font-size: 1.2rem;
-                }
-
-                .direccion {
-                    display: flex;
-                    gap: 0.5rem;
+                    font-size: 1rem;
+                    text-align: left;
                 }
             }
 
             article {
-                font-size: 1.2rem;
+                font-size: 1rem;
                 align-items:flex-start;
                 i {
-                    font-size: 1.5rem;
+                    font-size: 1.3rem;
                 }
             }
 
-            #map {
-                width: 220px;
-            }
 
-            .contacto {
-                justify-self: center;
-            }
-
-            .dire {
-                justify-self: flex-end;
-            }
     }
     }
 

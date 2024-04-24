@@ -16,15 +16,15 @@ const CARDS_DATA = [
             ],
             characteristics: [
                 "Los principios fundamentales del Reiki Usui incluyen:",
-                "Alineación con principios éticos: El practicante de Reiki sigue ciertos principios éticos conocidos como los Cinco Principios de Reiki, que incluyen afirmaciones positivas para promover el bienestar y la armonía.",
-                "Transferencia de energía a través de las manos: El practicante coloca sus manos sobre o cerca del cuerpo del receptor, permitiendo que la energía fluya a través de ellos para apoyar la sanación",
-                "Autotratamiento: Los practicantes de Reiki Usui también pueden aplicar la técnica a sí mismos para promover su propio equilibrio energético y bienestar.",
-                "Sesiones a distancia: Se cree que el Reiki puede transmitirse a distancia, lo que significa que un practicante puede enviar energía curativa a una persona que se encuentra en otro lugar.",
-                "El Reiki Usui no está asociado con ninguna religión específica y se considera una práctica espiritual no denominacional. Es importante destacar que mientras muchas personas encuentran beneficios en el Reiki, no reemplaza el tratamiento médico convencional y siempre se debe consultar a un profesional de la salud para problemas médicos graves. Además, la efectividad del Reiki puede variar según las creencias y experiencias individuales."
+                ['Alineación con principios éticos:', 'El practicante de Reiki sigue ciertos principios éticos conocidos como los Cinco Principios de Reiki, que incluyen afirmaciones positivas para promover el bienestar y la armonía.'],
+                ["Transferencia de energía a través de las manos:", 'El practicante coloca sus manos sobre o cerca del cuerpo del receptor, permitiendo que la energía fluya a través de ellos para apoyar la sanación",'],
+                ["Autotratamiento:", "Los practicantes de Reiki Usui también pueden aplicar la técnica a sí mismos para promover su propio equilibrio energético y bienestar."],
+                ["Sesiones a distancia:", "Se cree que el Reiki puede transmitirse a distancia, lo que significa que un practicante puede enviar energía curativa a una persona que se encuentra en otro lugar."],
+                ['',"El Reiki Usui no está asociado con ninguna religión específica y se considera una práctica espiritual no denominacional. Es importante destacar que mientras muchas personas encuentran beneficios en el Reiki, no reemplaza el tratamiento médico convencional y siempre se debe consultar a un profesional de la salud para problemas médicos graves. Además, la efectividad del Reiki puede variar según las creencias y experiencias individuales."]
             ]
         },
         mini_description: "el Reiki Usui es una práctica global de sanación energética que utiliza la imposición de manos para canalizar la energía universal y promover el equilibrio físico, emocional y espiritual en quienes reciben la terapia",
-        img: '../../certificados/c1.jpeg'
+        img: '../../imagenes-cursos/reiki-usui.jpeg'
     },
     
     {
@@ -40,7 +40,8 @@ const CARDS_DATA = [
             ],
         },
         mini_description: 'Karuna Reiki es una forma de terapia de energía y curación que se deriva del Reiki tradicional. Fue desarrollada por William Lee Rand, un maestro de Reiki y fundador del International Center for Reiki Training (ICRT), a finales de la década de 1990.',
-        img: '../../certificados/c5.jpeg'
+        img: '../../imagenes-cursos/reiki-karuna.webp'
+
     },
 
     {
@@ -53,15 +54,16 @@ const CARDS_DATA = [
             ],
             characteristics: [
                 "Aquí hay algunas características clave de la bambuterapia:",
-                "Masaje relajante: La bambuterapia implica deslizar y rodar las cañas de bambú sobre la piel, creando un masaje suave pero efectivo. Este masaje puede ayudar a aliviar la tensión muscular, mejorar la circulación sanguínea y promover la relajación.",
-                "Adaptabilidad: Las cañas de bambú son versátiles y se pueden adaptar a diversas áreas del cuerpo. Los terapeutas pueden utilizar técnicas específicas según las necesidades del paciente, ya sea para trabajar en áreas más grandes como la espalda o en zonas más pequeñas y específicas.",
-                "Beneficios físicos y emocionales: La bambuterapia se asocia comúnmente con beneficios para el bienestar físico y emocional. Puede ayudar a reducir el estrés, aliviar la tensión muscular, mejorar la flexibilidad y proporcionar una sensación general de relajación.",
-                "Estimulación del sistema linfático: Algunas técnicas de bambuterapia están diseñadas para estimular el sistema linfático, lo que puede ayudar en la eliminación de toxinas y mejorar la circulación.",
-                "Tratamientos complementarios: La bambuterapia a menudo se utiliza como un complemento a otros tratamientos de spa o masajes. Puede combinarse con aceites esenciales u otros productos para intensificar los beneficios relajantes."
+                ["Masaje relajante:", "La bambuterapia implica deslizar y rodar las cañas de bambú sobre la piel, creando un masaje suave pero efectivo. Este masaje puede ayudar a aliviar la tensión muscular, mejorar la circulación sanguínea y promover la relajación."],
+                ["Adaptabilidad:", "Las cañas de bambú son versátiles y se pueden adaptar a diversas áreas del cuerpo. Los terapeutas pueden utilizar técnicas específicas según las necesidades del paciente, ya sea para trabajar en áreas más grandes como la espalda o en zonas más pequeñas y específicas."],
+                ["Beneficios físicos y emocionales:", "La bambuterapia se asocia comúnmente con beneficios para el bienestar físico y emocional. Puede ayudar a reducir el estrés, aliviar la tensión muscular, mejorar la flexibilidad y proporcionar una sensación general de relajación."],
+                ["Estimulación del sistema linfático:", "Algunas técnicas de bambuterapia están diseñadas para estimular el sistema linfático, lo que puede ayudar en la eliminación de toxinas y mejorar la circulación."],
+                ["Tratamientos complementarios:" , "La bambuterapia a menudo se utiliza como un complemento a otros tratamientos de spa o masajes. Puede combinarse con aceites esenciales u otros productos para intensificar los beneficios relajantes."]
             ]
 
         },
-        mini_description: "La bambuterapia es un tipo de terapia que utiliza cañas de bambú para realizar masajes y tratamientos relajantes. Esta técnica combina el uso de cañas de bambú con técnicas de masaje para proporcionar beneficios terapéuticos y relajantes. "
+        mini_description: "La bambuterapia es un tipo de terapia que utiliza cañas de bambú para realizar masajes y tratamientos relajantes. Esta técnica combina el uso de cañas de bambú con técnicas de masaje para proporcionar beneficios terapéuticos y relajantes. ",
+        img: '../../imagenes-cursos/bambuterapia.jpeg'
     },
 
     {
@@ -73,13 +75,14 @@ const CARDS_DATA = [
             ],
             characteristics: [
                 "Aquí hay una breve descripción de cada uno de los elementos mencionados:",
-                "Radiestesia: Es una disciplina que detecta y mide radiaciones, energías o vibraciones a través de instrumentos como el péndulo o las varillas. Se cree que algunas personas poseen una sensibilidad especial para captar estas energías y que los instrumentos actúan como amplificadores de esta habilidad.",
-                "Péndulo: Un péndulo en radiestesia es generalmente una herramienta ponderada que cuelga de una cadena o hilo. Se sostiene sobre un objeto o superficie y se espera que responda a ciertos estímulos o preguntas mediante movimientos oscilatorios. La radiestesia nos muestra que estos movimientos pueden revelar información sobre la energía presente en el lugar o proporcionar respuestas a preguntas específicas.",
-                "Varillas: Las varillas de radiestesia son generalmente dos varillas metálicas en forma de L que se sostienen en las manos. Se utilizan para detectar cambios en el campo magnético o energético de un área específica. Las varillas pueden cruzarse o abrirse en respuesta a ciertos estímulos o preguntas."
+                ["Radiestesia:", "Es una disciplina que detecta y mide radiaciones, energías o vibraciones a través de instrumentos como el péndulo o las varillas. Se cree que algunas personas poseen una sensibilidad especial para captar estas energías y que los instrumentos actúan como amplificadores de esta habilidad."],
+                ["Péndulo:", "Un péndulo en radiestesia es generalmente una herramienta ponderada que cuelga de una cadena o hilo. Se sostiene sobre un objeto o superficie y se espera que responda a ciertos estímulos o preguntas mediante movimientos oscilatorios. La radiestesia nos muestra que estos movimientos pueden revelar información sobre la energía presente en el lugar o proporcionar respuestas a preguntas específicas."],
+                ["Varillas:", "Las varillas de radiestesia son generalmente dos varillas metálicas en forma de L que se sostienen en las manos. Se utilizan para detectar cambios en el campo magnético o energético de un área específica. Las varillas pueden cruzarse o abrirse en respuesta a ciertos estímulos o preguntas."]
             ]
         },
         mini_description: 'La radiestesia es una práctica que se utiliza para detectar energías y vibraciones utilizando instrumentos como el péndulo y las varillas. Algunas personas la utilizan con fines espirituales o de autoexploración. ',
-        img: '../../certificados/c10.jpeg'
+        img: '../../imagenes-cursos/radiestesia.jpeg'
+
     },
 
     {
@@ -93,7 +96,8 @@ const CARDS_DATA = [
             ]
         },
         mini_description: `Los Registros Akáshicos son un concepto espiritual y metafísico que proviene de las creencias de varias tradiciones esotéricas y filosofías místicas. `,
-        img: '../../certificados/c8.jpeg'
+        img: '../../imagenes-cursos/registros-akashicos.webp'
+
     },
     
     {
@@ -108,15 +112,39 @@ const CARDS_DATA = [
             ],
             characteristics:[
                 `Origen e historia del Tarot de Marsella:`,
-                `Siglo XV: Orígenes en Italia: Aunque el Tarot de Marsella se asocia comúnmente con Marsella, su origen se remonta a Italia en la década de 1440. Las primeras cartas de tarot eran naipes de juego y no se utilizaban inicialmente con fines adivinatorios.`,
-                `Expansión y transformación en Francia: El tarot se introdujo en Francia a través de comerciantes y se fue transformando con el tiempo. Se cree que el diseño y la simbología distintiva del Tarot de Marsella se establecieron en el siglo XVIII. Jean-Baptiste Alliette, también conocido como Etteilla, fue un influyente adivino y ocultista francés que contribuyó a popularizar el Tarot de Marsella en el siglo XVIII.`,
-                `Simbología y diseño: El Tarot de Marsella consta de 78 cartas, divididas en los Arcanos Mayores y Menores. Los Arcanos Mayores representan aspectos más significativos y universales de la vida, mientras que los Arcanos Menores se asocian con experiencias diarias. Las cartas presentan imágenes simbólicas que han sido objeto de interpretación a lo largo de los siglos.`,
-                `Uso adivinatorio y esotérico: A medida que el Tarot de Marsella se popularizaba, se comenzó a utilizar con fines adivinatorios y esotéricos. Los adivinos y tarotistas desarrollaron métodos específicos de lectura de cartas, y el Tarot de Marsella se convirtió en una herramienta común para explorar el pasado, presente y futuro.`,
-                `Influencia continua: A lo largo de los años, el Tarot de Marsella ha influido en numerosos mazos de tarot que han surgido desde entonces. Su simbología y diseño han sido adoptados y reinterpretados en diversas tradiciones esotéricas y adivinatorias.`
+                ['Siglo XV:','Orígenes en Italia: Aunque el Tarot de Marsella se asocia comúnmente con Marsella, su origen se remonta a Italia en la década de 1440. Las primeras cartas de tarot eran naipes de juego y no se utilizaban inicialmente con fines adivinatorios'],
+                ['Expansión y transformación en Francia:', 'El tarot se introdujo en Francia a través de comerciantes y se fue transformando con el tiempo. Se cree que el diseño y la simbología distintiva del Tarot de Marsella se establecieron en el siglo XVIII. Jean-Baptiste Alliette, también conocido como Etteilla, fue un influyente adivino y ocultista francés que contribuyó a popularizar el Tarot de Marsella en el siglo XVIII.'],
+                ['Simbología y diseño:', 'El Tarot de Marsella consta de 78 cartas, divididas en los Arcanos Mayores y Menores. Los Arcanos Mayores representan aspectos más significativos y universales de la vida, mientras que los Arcanos Menores se asocian con experiencias diarias. Las cartas presentan imágenes simbólicas que han sido objeto de interpretación a lo largo de los siglos.'],
+                ['Uso adivinatorio y esotérico:', 'A medida que el Tarot de Marsella se popularizaba, se comenzó a utilizar con fines adivinatorios y esotéricos. Los adivinos y tarotistas desarrollaron métodos específicos de lectura de cartas, y el Tarot de Marsella se convirtió en una herramienta común para explorar el pasado, presente y futuro.'],
+                ['Influencia continua:', 'A lo largo de los años, el Tarot de Marsella ha influido en numerosos mazos de tarot que han surgido desde entonces. Su simbología y diseño han sido adoptados y reinterpretados en diversas tradiciones esotéricas y adivinatorias.']
             ]
         },
         mini_description: `El Tarot de Marsella es uno de los mazos de tarot más antiguos y populares. Se cree que sus orígenes se remontan al siglo XV en la región de Marsella, Francia. `,
-        img: '../../certificados/c11.jpeg'
+        img: '../../imagenes-cursos/tarot.jpeg'
+
+    },
+
+    {
+        id:7,
+        title: 'Astrología',
+        description: {
+            paragraphs: [
+                `La astrología es un sistema de creencias que sostiene que la posición y movimiento de los cuerpos celestes, como planetas y estrellas, pueden influir en la vida y el comportamiento de las personas, así como en eventos terrestres. La astrología tiene raíces antiguas y ha sido practicada en diversas culturas a lo largo de la historia.`,
+                `La astrología se basa en la idea de que la posición de los astros en el momento del nacimiento de una persona (carta astral) puede proporcionar información sobre su personalidad, relaciones, carrera y otros aspectos de la vida. Los astrólogos utilizan horóscopos y diversas técnicas para interpretar estas influencias astrológicas.`,
+                `CARTA NATAL O ASTRAL: La carta natal, también conocida como carta astral o mapa astral, es una representación gráfica de la posición de los planetas, el Sol y la Luna en el momento preciso del nacimiento de una persona. Se utiliza en astrología para analizar e interpretar las influencias astrológicas que  afectan la personalidad y el destino de un individuo.`,
+                `La carta natal se crea a partir de datos específicos, como la fecha, hora y lugar exactos del nacimiento de una persona. Estos elementos son esenciales para calcular las posiciones exactas de los astros en el cielo en ese momento particular. La información recopilada se representa en un gráfico circular dividido en doce secciones llamadas casas astrológicas, que corresponden a diferentes áreas de la vida.`
+            ],
+            characteristics:[
+                `Función del Astrólogo`,
+                ['Interpretación de la Carta Natal:', 'Se analizan la posición de los planetas, el Sol y la Luna en la carta natal para ofrecer información sobre la personalidad, las tendencias emocionales, las habilidades potenciales y otros aspectos de la vida de una persona.'],
+                ['Asesoramiento Personalizado:', 'Basándose en la interpretación de la carta natal,  se proporciona un asesoramiento personalizado sobre temas como relaciones, carrera, finanzas y salud. Utilizan la astrología para ofrecer perspectivas únicas y sugerir posibles tendencias o desafíos en la vida de la persona.'],
+                ['Predicciones Astrólogicas:', 'Se realizan predicciones sobre eventos futuros utilizando diversas técnicas astrológicas. Esto puede incluir la predicción de tendencias generales, eventos importantes o cambios significativos en la vida de una persona.'],
+                ['Análisis de compatibilidad:', ': Se ofrecen servicios de análisis de compatibilidad, utilizando las cartas astrales de dos personas para evaluar la armonía potencial en una relación, ya sea amistosa, romántica o laboral.']
+            ]
+        },
+        mini_description: `La astrología es un sistema de creencias que sostiene que la posición y movimiento de los cuerpos celestes, como planetas y estrellas, pueden influir en la vida y el comportamiento de las personas, así como en eventos terrestres`,
+        img: '../../imagenes-cursos/astrologia.avif'
+
     }
 ]
 

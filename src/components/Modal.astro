@@ -1,5 +1,5 @@
 ---
-const { id, title, paragraphs, characteristics, img } = Astro.props
+const { id, title, paragraphs, characteristics, img, certificates } = Astro.props
 ---
 
 <article class="modal-container" id={id}>
@@ -25,18 +25,32 @@ const { id, title, paragraphs, characteristics, img } = Astro.props
                 {
                     characteristics.map((c,i) => {
                         if (i === 0) return null;
-
                         return (
-                            <li>{c}</li>
+                            <li><strong>{c[0]}</strong> {c[1]}</li>
                         );
                     })
                 }
             </ul>
         </div>
         }
+        {
+        img &&
         <picture>
             <img src={img} alt={`Imagen de certifiación de ${title}`}>
         </picture>
+        }
+        {
+        certificates &&
+        <section class="certificates">
+            {
+                certificates.map(c => {
+                    return (
+                        <img src={c} />
+                    )
+                })
+            }
+        </section>
+        }
         <i class="bi bi-x cerrar close-modal" aria-label={id}></i>
     </div>
 </article>
@@ -53,6 +67,7 @@ const { id, title, paragraphs, characteristics, img } = Astro.props
         
         .modal {
             overflow-y: auto;
+            overflow-x: hidden;
             padding: 1rem 0;
             position: fixed;
             z-index: 100;
@@ -91,9 +106,9 @@ const { id, title, paragraphs, characteristics, img } = Astro.props
 
             .close-modal {
                 cursor: pointer;
-                position: absolute;
-                top: 5px;
-                right: 5px;
+                position: fixed;
+                top: 6%;
+                right: 10%;
                 color: #fff;
                 font-size: 2rem;
             }
@@ -108,11 +123,17 @@ const { id, title, paragraphs, characteristics, img } = Astro.props
                     margin-left: 1.1rem;
                     li {
                         list-style-type:decimal;
-                            font-size: 0.9rem;
+                        font-size: 0.9rem;
                         line-height: 1.5;
                         margin-bottom: 1rem;
                         letter-spacing: .5px;
                         font-weight: 100;
+
+                        p {
+                            padding: 0;
+                            color: #fff;
+                            font-weight: bold;
+                        }
 
                     &:last-child {
                         margin: 0;
@@ -129,6 +150,34 @@ const { id, title, paragraphs, characteristics, img } = Astro.props
                     width: 100%;
                     height: 100%;
                     object-fit: cover;
+                }
+            }
+
+            .certificates {
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+                gap: 0.5rem;
+
+                img {
+                    width: 100%;
+                    max-width: 300px;
+                    object-fit: cover;
+                }
+            }
+        }
+    }
+
+    @media screen and (width > 620px) {
+        .modal-container {
+            .modal {
+                .close-modal {
+                    cursor: pointer;
+                    position: fixed;
+                    top: 6%;
+                    right: 8%;
+                    color: #fff;
+                    font-size: 2rem;
                 }
             }
         }

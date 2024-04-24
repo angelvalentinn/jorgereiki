@@ -1,7 +1,7 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Card from "../components/Card.astro"
-import CARDS_DATA  from '../scripts/data.js'
+import CARDS_DATA  from '../scripts/data-cursos.js'
 ---
 
 <Layout title="Jorge Reiki | Cursos/Terapias">
@@ -9,7 +9,7 @@ import CARDS_DATA  from '../scripts/data.js'
         <article class="text">
             <h1>Cursos / Terapias</h1>
             <p>
-                Estos son los cursos que me brindaron no solo la maestría, sino también experimentar transformaciones notables en mi vida, gracias a los conocimientos profundos sobre la energía y sus efectos curativos.
+                Estos son los cursos que me brindaron no solo la maestría, sino también experimentar <strong>transformaciones notables en mi vida</strong>, gracias a los conocimientos profundos sobre la energía y sus efectos curativos.
                 <strong>Todos los cursos / terapias pueden ser online y en persona.</strong>
             </p>
         </article>
@@ -42,10 +42,10 @@ import CARDS_DATA  from '../scripts/data.js'
             gap: 1rem;
                 h1 {
                     font-size: 2.5rem;
-                    text-decoration: underline var(--clr-primary-200);
                 }
                 strong {
                     color:var(--clr-primary-200);
+                    font-weight:normal;
                 }
                 p {
                     text-wrap: balance;
@@ -65,7 +65,7 @@ import CARDS_DATA  from '../scripts/data.js'
             text-align: center;
             .text {
                     h1 {
-                        font-size: 3rem;
+                        font-size: 2.5rem;
                     }
                     p {
                         line-height: 1.5;

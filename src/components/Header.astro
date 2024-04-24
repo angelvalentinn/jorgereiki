@@ -1,10 +1,7 @@
----
----
-
 <header>
     <section class="presentacion">
         <img class="logo" src="../../logo.png" alt="Logo de la página" />
-        <p class="nombre">Jorge Fairchild</p>
+        <p class="nombre">Anahata - Capacitación y Prácticas alternativas</p>
         <p>Sanación personal</p>
     </section>
 
@@ -57,8 +54,9 @@
 
 
             .logo {
-                width: 100px;
-                height: 100px;
+                margin-left: 1rem;
+                width: 70px;
+                height: 70px;
             }
 
             p {
@@ -67,7 +65,6 @@
             }
 
             .nombre {
-                font-family: 'Tangerine', cursive;
                 font-size: 3.5rem;
                 color: var(--clr-primary-300);
             }
@@ -77,12 +74,12 @@
             grid-area: contacto;
             padding: .2rem;
             background-color: var(--clr-primary-200);
-            color: #fff;
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
             gap: .5rem;
+            color: #fff;
 
             img {
                 width: 20px;
@@ -123,7 +120,6 @@
             justify-content: center;        
 
             ul {
-                text-transform: uppercase;
                 letter-spacing: 1px;
                 display: flex;
                 flex-direction: column;
@@ -161,45 +157,51 @@
         }
     }
 
-    @media  screen and (width > 620px) {
+    @media  screen and (width > 660px) {
 
         header {
             padding-block: 0;
             display: grid;
             grid-template-areas:
             "presentacion contacto"
-            "nav nav"
-            ;
+            "nav nav";
             align-items: center;
             row-gap: 1rem;
+            grid-template-columns: 1fr 1fr;
 
             .presentacion {
+                padding-block: .2rem;
                 justify-self: center;
                 display: flex;
                 flex-direction: column;
                 align-items: center;
+                gap: .5rem;
 
                 .logo {
-                    width: 80px;
-                    height: 80px;
+                    width: 60px;
+                    height: 60px;
+                    margin: 0;
                 }
 
                 p {
                     display: block;
-                    font-size: 1.1rem;
+                    font-size: 1rem;
+
                 }
 
                 .nombre {
-                    font-family: 'Tangerine', cursive;
-                    font-size: 3rem;
+                    font-size: 1.2rem;
+                    line-height: 1.4;
+                    width: 70%;
                     color: var(--clr-primary-300);
                 }
                 
             }
 
             .contacto {
+                margin-top: 3rem;
                 justify-self: center;
-                margin-top: 0;
+    
                 padding: 0;
                 background-color: inherit;
                 display: flex;
@@ -216,9 +218,9 @@
                     display: flex;
                     align-items: center;
                     gap: 0.5rem;
-                    color: var(--clr-primary-200);
+                    color: var(--clr-primary-300);
                     a {
-                        color: var(--clr-primary-200);
+                        color: var(--clr-primary-300);
                     }
                 }
             }
@@ -239,6 +241,10 @@
                     letter-spacing: 0;
                     justify-content: center;
                     gap: 3rem;
+
+                    li:hover {
+                        text-decoration: underline;
+                    }
                 }
 
                 .cerrar {
@@ -255,8 +261,10 @@
     @media  screen and (width > 950px) {
         header {
             gap: 0;
+            grid-template-columns: auto;
 
             .presentacion {
+                padding-block: .6rem;
                 justify-self: center;
                 display: grid;
                 grid-template-areas:
@@ -267,32 +275,35 @@
                 .logo {
                     justify-self: flex-end;
                     grid-area: logo;
-                    width: 120px;
-                    height: 120px;
+                    width: 80px;
+                    height: 80px;
                 }
 
                 p {
                     align-self: flex-start;
-                    font-size: 1.2rem;
+                    font-size: 1rem;
+                    color: #694db1;
+                    text-align: left;
                 }
 
                 .nombre {
+                    text-align: left;
                     align-self: flex-end;
-                    font-size: 3rem;
+                    font-size: 1.2rem;
+                    width: 80%;
                 }
             }
 
             .contacto {
-
-                img {
+                margin-top: 0;
+                img {  
                     width: 25px;
                     height: 25px;
                 }
 
                 div {
                     font-size: 1.2rem;
-                    color: var(--clr-primary-200);
-
+                    color: var(--clr-primary-300);
 
                 }
             }

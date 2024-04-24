@@ -2,7 +2,7 @@ document.addEventListener('astro:page-load', () => {
     
     const btnModal = document.querySelectorAll('.abrir-modal');
     const modales = document.querySelectorAll('.modal-container');
-    const closeModal = document.querySelectorAll('.close-modal')
+    const closeModal = document.querySelectorAll('.close-modal');
 
     btnModal?.forEach(btn => {
         
@@ -11,7 +11,6 @@ document.addEventListener('astro:page-load', () => {
             modales.forEach(modal => {
                 
                 if(btn.ariaLabel == modal.id) {
-
                     document.body.style.overflow = 'hidden'
                     modal.style.display = 'block';
                     modal.classList.add('fade-in-bck');
