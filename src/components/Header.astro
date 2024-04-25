@@ -19,11 +19,11 @@
 
     <nav  class=`nav disabled`>
         <ul>
-            <li><a href="/">Inicio</a></li>
-            <li><a href="/sobre-mi">Sobre mí</a></li>
-            <li><a href="/reiki">Reiki</a></li>
-            <li><a href="/cursos-terapias">Cursos / Terapias</a></li>
-            <li><a href="#contacto">Contacto</a></li>
+            <li><a href="/" class="">Inicio</a></li>
+            <li><a href="/sobre-mi" class="">Sobre mí</a></li>
+            <li><a href="/reiki" class="">Reiki</a></li>
+            <li><a href="/cursos-terapias" class="">Cursos / Terapias</a></li>
+            <li><a href="#contacto" class="">Contacto</a></li>
         </ul>
         <i class="bi bi-x cerrar close-menu"></i>
     </nav>  
@@ -32,10 +32,6 @@
 </header>
 
 <style>
-
-    .disabled {
-       
-    }
 
     header {
         display: grid;
@@ -111,7 +107,7 @@
 
         nav {
             transition: .3s ease all;
-            transform: translateX(0);
+            transform: translateX(100%);
             padding: 0 1rem;
             z-index: 10000;
             position: fixed;
@@ -236,6 +232,8 @@
 
             nav {
                 display: block !important;
+                transform: translateX(0);
+
                 grid-column: 1 / -1;
                 padding-top: 0;
                 position: static;
