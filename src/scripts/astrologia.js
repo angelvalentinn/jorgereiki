@@ -17,7 +17,7 @@ const astrologia = {
         ]
     },
     mini_description: `La astrología es un sistema de creencias que sostiene que la posición y movimiento de los cuerpos celestes, como planetas y estrellas, pueden influir en la vida y el comportamiento de las personas, así como en eventos terrestres`,
-    img: '../../imagenes-cursos/astrologia.avif'
+    img: '../../imagenes-cursos/astrologia.webp'
 
 }
 

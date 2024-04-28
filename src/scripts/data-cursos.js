@@ -24,7 +24,7 @@ const CARDS_DATA = [
             ]
         },
         mini_description: "el Reiki Usui es una práctica global de sanación energética que utiliza la imposición de manos para canalizar la energía universal y promover el equilibrio físico, emocional y espiritual en quienes reciben la terapia",
-        img: '../../imagenes-cursos/reiki-usui.jpeg'
+        img: '../../imagenes-cursos/reiki-usui.webp'
     },
     
     {
@@ -63,7 +63,7 @@ const CARDS_DATA = [
 
         },
         mini_description: "La bambuterapia es un tipo de terapia que utiliza cañas de bambú para realizar masajes y tratamientos relajantes. Esta técnica combina el uso de cañas de bambú con técnicas de masaje para proporcionar beneficios terapéuticos y relajantes. ",
-        img: '../../imagenes-cursos/bambuterapia.jpeg'
+        img: '../../imagenes-cursos/bambuterapia.webp'
     },
 
     {
@@ -81,7 +81,7 @@ const CARDS_DATA = [
             ]
         },
         mini_description: 'La radiestesia es una práctica que se utiliza para detectar energías y vibraciones utilizando instrumentos como el péndulo y las varillas. Algunas personas la utilizan con fines espirituales o de autoexploración. ',
-        img: '../../imagenes-cursos/radiestesia.jpeg'
+        img: '../../imagenes-cursos/radiestesia.webp'
 
     },
 
@@ -120,7 +120,7 @@ const CARDS_DATA = [
             ]
         },
         mini_description: `El Tarot de Marsella es uno de los mazos de tarot más antiguos y populares. Se cree que sus orígenes se remontan al siglo XV en la región de Marsella, Francia. `,
-        img: '../../imagenes-cursos/tarot.jpeg'
+        img: '../../imagenes-cursos/tarot.webp'
 
     },
 ]
