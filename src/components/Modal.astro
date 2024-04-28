@@ -36,7 +36,7 @@ const { id, title, paragraphs, characteristics, img, certificates } = Astro.prop
         {
         img &&
         <picture>
-            <img src={img} alt={`Imagen de certifiación de ${title}`}>
+            <img src={img} alt={`Imagen de certifiación de ${title}`} loading="lazy">
         </picture>
         }
         {

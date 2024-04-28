@@ -5,7 +5,7 @@ const { id ,title, miniDescription, description, characteristics, img } = Astro.
 ---
 
 <div class="card" >
-    <img src={img || '../../img2.jpg'} alt={`Imagen del certificado de ${title}`}>
+    <img src={img || '../../img2.jpg'} alt={`Imagen del certificado de ${title}`} loading="lazy">
 
     <div class="texts">
         <h2>{title}</h2>
