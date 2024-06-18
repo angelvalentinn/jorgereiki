@@ -33,17 +33,6 @@ const dataPersonal = {
         '../../certificados/c2.webp',
         '../../certificados/c3.webp',
         '../../certificados/c4.webp',
-        '../../certificados/c5.webp',
-        '../../certificados/c6.webp',
-        '../../certificados/c7.webp',
-        '../../certificados/c8.webp',
-        '../../certificados/c9.webp',
-        '../../certificados/c10.webp',
-        '../../certificados/c11.webp',
-        '../../certificados/c12.webp',
-        '../../certificados/c13.webp',
-        '../../certificados/c14.webp',
-        '../../certificados/c15.webp',
     ]
     
 }
